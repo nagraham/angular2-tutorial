@@ -12,14 +12,8 @@ import { HeroService } from './hero.service';
   selector: 'my-app',
   directives: [ROUTER_DIRECTIVES],
   providers: [HeroService, ROUTER_PROVIDERS],
-  template:`
-    <h1>{{title}}</h1>
-    <nav>
-      <a [routerLink]="['Dashboard']">Dashboard</a>
-      <a [routerLink]="['Heroes']">Heroes</a>
-    </nav>
-    <router-outlet></router-outlet>
-  `
+  templateUrl: 'app/app.component.html',
+  styleUrls: ['app/app.component.css']
 })
 
 @RouteConfig([
